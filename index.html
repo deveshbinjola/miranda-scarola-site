@@ -157,7 +157,7 @@
   .hero-headline{
     font-family:'Cormorant Garamond',serif;
     font-weight:500;
-    font-size:clamp(54px,7vw,86px);
+    font-size:clamp(42px,9vw,86px);
     line-height:1.02;
     letter-spacing:-0.015em;
     color:var(--plum);
@@ -449,7 +449,7 @@
   @media(max-width:960px){
     .pillar-grid{grid-template-columns:repeat(2,1fr)}
   }
-  @media(max-width:580px){
+  @media(max-width:720px){
     .pillar-grid{grid-template-columns:1fr}
   }
 
@@ -647,9 +647,9 @@
   }
   .walk-left h2{
     font-family:'Cormorant Garamond',serif;font-weight:400;
-    font-size:clamp(44px,5vw,60px);line-height:1.05;
+    font-size:clamp(34px,5vw,60px);line-height:1.05;
     letter-spacing:-0.02em;color:var(--cream-soft);
-    margin-bottom:48px;
+    margin-bottom:40px;
   }
   .walk-items{display:grid;grid-template-columns:1fr 1fr;gap:32px 28px}
   .walk-item .num{
@@ -1000,6 +1000,47 @@
     .contact-form{padding:36px 28px 32px;border-radius:20px}
   }
 
+  /* GLOBAL MOBILE TIGHTENING */
+  @media(max-width:780px){
+    section{padding:64px 0}
+    .hero{padding:32px 0 56px}
+    .walk{padding:0}
+    .final-cta{padding:72px 0 64px}
+    .hero-section{padding:0 14px 32px}
+    .hero-card{border-radius:22px}
+    .hero-card-inner{padding:36px 24px;gap:36px}
+    .top-mark{padding:24px 0 18px}
+    .top-mark-text{font-size:24px}
+    .top-mark-icon{width:38px;height:38px}
+    .meet-grid,.about-grid,.why-grid,.about-essence{gap:40px}
+    .section-title{margin-bottom:18px}
+    .section-sub{margin-bottom:40px;font-size:15px}
+    .head{margin-bottom:48px}
+    .pathway-single{padding:28px 22px;gap:28px;border-radius:18px}
+    .pathway-single-body h3{font-size:26px;margin-bottom:14px}
+    .pathway-single-lede{font-size:17px;margin-bottom:22px}
+    .audience-list li{padding:14px 0 14px 22px;font-size:14px}
+    .audience-list li::before{top:22px}
+    .pillar-card{padding:28px 24px 26px}
+    .pillar-title{font-size:23px}
+    .walk-left{padding:54px 28px}
+    .walk-items{gap:24px 20px}
+    .walk-item .ttl{font-size:19px}
+    .words-feature blockquote{font-size:22px;line-height:1.3}
+    .words-feature .mark{font-size:96px;height:38px}
+    .words-small{padding:28px 24px 26px}
+    .words-small blockquote{font-size:18px}
+    .contact-form input,.contact-form textarea{font-size:17px;padding:12px 0}
+    .trust-strip{padding:32px 0 28px}
+    .trust-cell{padding:12px 18px}
+    .trust-cell .v{font-size:24px}
+    .meet-prose{font-size:15.5px}
+    .hero-tagline-2{font-size:12px;line-height:1.7}
+    .hero-tagline{padding-top:18px}
+  }
+  /* scroll-margin so #contact anchor leaves breathing room above */
+  #contact{scroll-margin-top:24px}
+
   /* FOOTER */
   footer{
     background:var(--plum-darker);
@@ -1127,7 +1168,7 @@
       <div>
         <div class="meet-photo-wrap">
           <div class="meet-photo">
-            <img src="miranda-about.jpg" alt="Miranda Scarola" onerror="this.style.display='none'">
+            <img src="miranda-about.jpg" alt="Miranda Scarola" loading="lazy" onerror="this.style.display='none'">
           </div>
         </div>
         <div class="meet-caption" style="justify-content:flex-end">
@@ -1229,7 +1270,7 @@
 
     <div class="pathway-single">
       <div class="pathway-single-photo">
-        <img src="pathway-therapist.jpg" alt="Miranda's clients" onerror="this.style.display='none'">
+        <img src="pathway-therapist.jpg" alt="Miranda's clients" loading="lazy" onerror="this.style.display='none'">
       </div>
       <div class="pathway-single-body">
         <h3>For the practitioner <span class="it">stepping into legacy work.</span></h3>
@@ -1344,7 +1385,7 @@
       </div>
     </div>
     <div class="walk-right">
-      <img src="miranda-walk.jpg" alt="Miranda Scarola" onerror="this.style.display='none'">
+      <img src="miranda-walk.jpg" alt="Miranda Scarola" loading="lazy" onerror="this.style.display='none'">
     </div>
   </div>
 </section>
@@ -1399,7 +1440,7 @@
     <div class="row">
       <div class="brand">
         <div class="brand-mark">
-          <img src="miranda-portrait.jpg" alt="Miranda Scarola" onerror="this.style.display='none'">
+          <img src="miranda-portrait.jpg" alt="Miranda Scarola" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="brand-name">
           Miranda Scarola
